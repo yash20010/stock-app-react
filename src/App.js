@@ -12,19 +12,17 @@ function App() {
       )
       .then((res) => {
         setCoins(res.data)
-        console.log(coins)
       })
       .catch((err) => console.log(err))
   }, [])
 
   return (
-    <div className="App">
+    <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">
-          <form>
-            <input type="text" placeholder="Search" className="coin-input" />
-          </form>
-        </h1>
+        <h1 className="coin-text">Search a currency</h1>
+        <form>
+          <input type="text" placeholder="Search" className="coin-input" />
+        </form>
       </div>
     </div>
   )
