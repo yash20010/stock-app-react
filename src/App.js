@@ -22,12 +22,21 @@ function App() {
     setSearch(e.target.value)
   })
 
+  const filteredCoins = coins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  )
+
   return (
     <div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
         <form>
-          <input type="text" placeholder="Search" className="coin-input" />
+          <input
+            type="text"
+            placeholder="Search"
+            className="coin-input"
+            onChange={handleChange}
+          />
         </form>
       </div>
     </div>
