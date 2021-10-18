@@ -8,3 +8,19 @@
   background-color: #1a1a1c;
   color: #fff;
 }
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 64px;
+  color: #fff;
+}
+
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
