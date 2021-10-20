@@ -28,6 +28,7 @@
 .coin-text {
   margin-bottom: 32px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .coin-input {
